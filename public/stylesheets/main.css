@@ -1,0 +1,29 @@
+* {
+    padding:0;
+    margin:0;    
+}
+
+#wrapper {
+    width:500px;
+    margin:40px auto;
+}
+
+form {
+    background:#F5F5F5;
+    padding:20px;
+    margin-top:20px;
+}
+
+input[type="text"]{
+    width:84%;
+    height:20px;
+    padding:2px;
+    border:1px solid #ededed;
+}
+
+input[type="submit"]{
+    border:1px solid #ededed;
+    background:#BFBFB8;
+    color:#444444;
+    padding:6px 10px;
+}

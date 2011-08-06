@@ -1,0 +1,21 @@
+@(
+    short:Option[models.Shortener] = None,
+    title:String = "Scala Url Shortener"
+)
+
+@main(title) {
+  <h1>@(title)</h1>
+  
+  <form action="" method="post" accept-charset="utf-8">
+    <p>
+      <label for="longUrl">Paste your long URL here:</label>
+      <br />
+      <input type="text" value="" name="longUrl"/>
+      <input type="submit" value="Shorten">
+    </p>
+  </form>
+  
+  @if(short){
+    <H3> your shorten url is http://localhost:9000/@short.get.shortUrl</h3>
+  }
+}
